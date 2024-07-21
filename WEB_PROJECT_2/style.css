@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.sideleft {
+    background-color: #AF8F6F ;
+    height: 100% ;
+    width: 250px ;
+    position: fixed ;
+}
+
+.title {
+    margin-bottom: 5rem;
+    background-color: #E8EFCF;
+    text-align: center;
+    padding: 12px;
+    margin-top: 3rem;
+}
+
+.button-sideleft {
+    background-color: #E8EFCF ;
+    margin: 20px ;
+    padding: 12px ;
+    border-radius: 7px;
+}
+
+.content {
+    margin-left: 250px ;
+    height: 100vh;
+    background-color: #FAEED1;
+}
+
+.content-summary {
+    display: flex ;
+    padding-top: 1.5rem;
+    justify-content: space-between;
+    margin-inline: 2rem;
+}
+
+.a-content {
+    width: 20% ;
+    height: 7rem;
+    background-color: #FFC94A;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.b-content {
+    width: 20% ;
+    height: 7rem;
+    background-color: #BDE6F1 ;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-content {
+    width: 20% ;
+    height: 7rem;
+    background-color: #7ABA78 ;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-content {
+    width: 20% ;
+    height: 7rem;
+    background-color: #FF6969 ;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-content {
+    font-size: 25px;
+}
+
+.hc {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.media {
+    margin-top: auto;
+}
+
+.kalender {
+        /* height: 10px;
+        margin: 20px; */
+}

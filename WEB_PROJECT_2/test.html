@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PEMINJAMAN BUKU PERPUSTAKAAN</title>
+    <link rel="stylesheet" href="request.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="sideleft">
+        <h2 class="title">PERPUSTAKAAN</h2>
+        <div class="button-sideleft">
+            <a href="project.html">Beranda</a>
+        </div>
+        <div class="button-sideleft">
+            <a href="anggota.html"> Anggota </a>
+        </div>
+        <div class="button-sideleft">
+            <a href="request.html">Pengajuan Peminjaman </a>
+        </div>
+        <div class="button-sideleft">
+            <a href="result.html">Pengajuan Pengembalian </a>
+        </div>
+        <div class="button-sideleft">
+            <a href="create-book.html">Buku </a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="form-content">
+            <div class="form-a">
+                <form id="form-data" enctype="multipart/form-data">
+                    <div class="table-input">
+                        <table class="table-input-data">
+                            <tr>
+                                <th colspan="2" class="form-result-th">
+                                    <div class="title-form"> Formulir Pengajuan Peminjaman Buku</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">Nama Anggota</label>
+                                </td>
+                                <td>
+                                    <select id="name" name="name" style="width: 100%;" required>
+                                        <option value="">Cari anggota</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="judulbuku">Judul Buku</label>
+                                </td>
+                                <td>
+                                    <select id="judulbuku" name="judulbuku" style="width: 100%;" required>
+                                        <option value="">Cari buku</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="borrowDate">Tanggal Peminjaman</label>
+                                </td>
+                                <td>
+                                    <input type="datetime-local" id="tglpeminjaman" name="tglpeminjaman" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="borrowDate">Tanggal Pengembalian</label>
+                                </td>
+                                <td>
+                                    <input type="datetime-local" id="tglpengembalian" name="tglpengembalian" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">Nama Petugas</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="petugas" name="petugas" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="button" onclick="addRow()">Submit</button>
+                                    <div id="response"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+
+            <div class="sideright">
+                <table id="result-data" class="table-result-data">
+                    <thead>
+                        <tr>
+                            <th colspan="7" class="form-result-th">
+                                <div class="title-form">Hasil Data</div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="form-result-th">Nama Lengkap</th>
+                            <th class="form-result-th">NIM</th>
+                            <th class="form-result-th">Judul Buku</th>
+                            <th class="form-result-th">Tanggal Peminjaman</th>
+                            <th class="form-result-th">Tanggal Pengembalian</th>
+                            <th class="form-result-th">Nama Petugas</th>
+                            <th class="form-result-th">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- FOR ROW -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <script src="script-req.js"></script>
+</body>
+
+</html>

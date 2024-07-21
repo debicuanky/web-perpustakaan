@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PEMINJAMAN BUKU PERPUSTAKAAN</title>
+    <link rel="stylesheet" href="anggota.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sideleft">
+        <h2 class="title">PERPUSTAKAAN</h2>
+        <div class="button-sideleft">
+            <a href="project.html">Beranda</a>
+        </div>
+        <div class="button-sideleft">
+            <a href="anggota.html"> Anggota </a>
+        </div>
+        <div class="button-sideleft">
+            <a href="request.html">Pengajuan Peminjaman </a>
+        </div>
+        <div class="button-sideleft">
+            <a href="result.html">Pengajuan Pengembalian </a>
+        </div>
+        <div class="button-sideleft"> 
+            <a href="create-book.html">Buku </a> 
+        </div>
+        <div class="button-sideleft"> 
+            <a href="history.html">History </a> 
+        </div>
+    </div>
+    <div class="content">
+        <div class="form-content">
+            <div class="form-a">
+                <form id="form-data" enctype="multipart/form-data">
+                    <div class="table-input">
+                        <table class="table-input-data">
+                            <tr>
+                                <th colspan="2" class="form-result-th">
+                                    <div class="title-form"> Formulir Keanggotaan</div>
+                                    <div>
+                                        <button type="button" onclick="cetak()" id="btncetakanggota"> Cetak </button>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">Nama Lengkap</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="name" name="name" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">NIM</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="nim" name="nim" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">Nomor Telpon</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="notlp" name="notlp" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">Email</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="email" name="email" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="image">Upload Foto</label>
+                                <br>
+                                <div class="max-image"> (Maks 50 Kb)</div>
+                            </br>
+                                </td>
+                                <td>
+                                    <img src="" id="show" alt="">
+                                    <input type="file" id="foto" name="foto" accept="image/" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="button" onclick="addRow()" id="btnkirim">Kirim</button>
+                                    <div id="response"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="sideright">
+                    <table id="result-data" class="table-result-data">
+                        <thead>
+                            <tr >
+                                <th colspan="7" class="form-result-th">
+                                    <div class="title-form">Hasil Data</div>
+                                </th>
+                            </tr>
+                            <tr>
+                               <th class="form-result-th"> Nama Lengkap</th>
+                               <th class="form-result-th">NIM</th>
+                               <th class="form-result-th">Nomor Telepon</th>
+                               <th class="form-result-th">Email</th>
+                               <th class="form-result-th">Foto</th>
+                               <th class="form-result-th"> </th>
+                               <th class="form-result-th"> </th>
+                            </tr>
+                           </thead>
+                           <tbody>
+                            <!-- FOR ROW -->
+                           </tbody>
+                    </table>
+                </div>
+                
+              
+            </div>
+
+        </div>
+    </div>
+    <script src="script-anggota.js"> </script>
+</body>
+</html>

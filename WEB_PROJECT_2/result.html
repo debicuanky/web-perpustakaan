@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PEMINJAMAN BUKU PERPUSTAKAAN</title>
+    <link rel="stylesheet" href="result.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sideleft">
+        <h2 class="title">PERPUSTAKAAN</h2>
+        <div class="button-sideleft">
+            <a href="project.html">Beranda</a>
+        </div>
+        <div class="button-sideleft">
+            <a href="anggota.html"> Anggota </a>
+        </div>
+        <div class="button-sideleft">
+            <a href="request.html">Pengajuan Peminjaman </a>
+        </div>
+        <div class="button-sideleft">
+            <a href="result.html">Pengajuan Pengembalian </a>
+        </div>
+           <div class="button-sideleft"> 
+            <a href="create-book.html">Buku </a> 
+        </div>
+        <div class="button-sideleft"> 
+            <a href="history.html">History </a> 
+        </div>
+    </div>
+    <div class="content">
+        <div class="form-content">
+            <div class="form-a">
+                <form id="form-data" enctype="multipart/form-data">
+                    <div class="table-input">
+                        <table class="table-input-data">
+                            <tr>
+                                <th colspan="2" class="form-result-th">
+                                    <div class="title-form"> Formulir Pengajuan Pengembalian Buku</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">Nama Lengkap</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="name" name="name" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">NIM</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="nim" name="nim" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="button" onclick="addRow()" id="button-result" name="buttonresult">Cari</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="sideright">
+                    <table id="result-data" class="table-result-data">
+                        <thead>
+                            <tr >
+                                <th colspan="9" class="form-result-th">
+                                    <div class="title-form">Hasil Data</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="form-result-th">No Reff</th>
+                               <th class="form-result-th"> Nama Lengkap</th>
+                               <th class="form-result-th">NIM</th>
+                               <th class="form-result-th">Foto</th>
+                               <th class="form-result-th">Judul Buku</th>
+                               <th class="form-result-th">Tanggal Peminjaman</th>
+                               <th class="form-result-th">Tanggal Pengembalian</th>
+                               <th class="form-result-th">Nama Petugas</th>
+                               <th class="form-result-th">Status</th>
+                            </tr>
+                           </thead>
+                           <tbody>
+                            <!-- FOR ROW -->
+                           </tbody>
+                    </table>
+                </div>
+                
+              
+            </div>
+
+        </div>
+    </div>
+    <script src="script-result.js"> </script>
+</body>
+</html>

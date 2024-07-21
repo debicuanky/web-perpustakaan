@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PEMINJAMAN BUKU PERPUSTAKAAN</title>
+    <link rel="stylesheet" href="history.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="sideleft">
+        <h2 class="title">PERPUSTAKAAN</h2>
+        <div class="button-sideleft">
+            <a href="project.html">Beranda</a>
+        </div>
+        <div class="button-sideleft">
+            <a href="anggota.html"> Anggota </a>
+        </div>
+        <div class="button-sideleft">
+            <a href="request.html">Pengajuan Peminjaman </a>
+        </div>
+        <div class="button-sideleft">
+            <a href="result.html">Pengajuan Pengembalian </a>
+        </div>
+        <div class="button-sideleft">
+            <a href="create-book.html">Buku </a>
+        </div>
+        <div class="button-sideleft">
+            <a href="history.html">History </a>
+        </div>
+    </div>
+
+    <div class="side_result">
+        <div class="sideright">
+            <table id="result-data" class="table-result-data">
+                <thead>
+                    <tr>
+                        <th colspan="9" class="form-result-th">
+                            <div class="title-form">Hasil Data</div>
+                            <div>
+                                <button type="button" onclick="cetak()" id="btncetakhistory"> Cetak </button>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="form-result-th"> No Reff</th>
+                        <th class="form-result-th"> Nama Lengkap</th>
+                        <th class="form-result-th">NIM</th>
+                        <th class="form-result-th">Foto</th>
+                        <th class="form-result-th">Judul Buku</th>
+                        <th class="form-result-th">Tanggal Peminjaman</th>
+                        <th class="form-result-th">Tanggal Pengembalian</th>
+                        <th class="form-result-th">Nama Petugas</th>
+                        <th class="form-result-th">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- FOR ROW -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+
+    
+    <script src="script-history.js"> </script>
+</body>
+
+</html>

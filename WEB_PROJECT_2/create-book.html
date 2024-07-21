@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PEMINJAMAN BUKU PERPUSTAKAAN</title>
+    <link rel="stylesheet" href="result.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sideleft">
+        <h2 class="title">PERPUSTAKAAN</h2>
+        <div class="button-sideleft">
+            <a href="project.html">Beranda</a>
+        </div>
+        <div class="button-sideleft">
+            <a href="anggota.html"> Anggota </a>
+        </div>
+        <div class="button-sideleft">
+            <a href="request.html">Pengajuan Peminjaman </a>
+        </div>
+        <div class="button-sideleft">
+            <a href="result.html">Pengajuan Pengembalian </a>
+        </div>
+        <div class="button-sideleft"> 
+            <a href="create-book.html">Buku </a> 
+        </div>
+        <div class="button-sideleft"> 
+            <a href="history.html">History </a> 
+        </div>
+    </div>
+    <div class="content">
+        <div class="form-content">
+            <div class="form-a">
+                <form id="form-data" enctype="multipart/form-data">
+                    <div class="table-input">
+                        <table class="table-input-data" id="table-input-data">
+                            <tr>
+                                <th colspan="2" class="form-result-th">
+                                    <div class="title-form"> Menambahkan Buku</div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">Judul buku</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="name" name="name" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="name">Jumlah Buku</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="jumlah-buku" name="jumlah-buku" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="button" onclick="addRow()" id="btntambah">Tambahkan</button> 
+                                    <div id="response"></div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="sideright">
+                    <table id="result-data" class="table-result-data">
+                        <thead>
+                            <tr >
+                                <th colspan="4" class="form-result-th">
+                                    <div class="title-form">Hasil Data</div>
+                                    <div>
+                                        <button type="button" onclick="cetak()" id="btncetak"> Cetak </button>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                               <th class="form-result-th"> Judul Buku</th>
+                               <th class="form-result-th">Jumlah Buku</th>
+                               <th class="form-result-th">Status</th>
+                               <th class="form-result-th"> </th>
+                               
+                            </tr>
+                           </thead>
+                           <tbody>
+                            <!-- FOR ROW -->
+                           </tbody>
+                    </table>
+                </div>
+                
+              
+            </div>
+
+        </div>
+    </div>
+    <script src="create-book.js"> </script>
+</body>
+</html>
